@@ -1,0 +1,158 @@
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    grid-column-gap: 1%;
+    grid-template-rows: 15% 10% auto 15%;
+    grid-row-gap: 15px;
+    background-image: url("/images/old-lille-district-of-vieux-lille-lille-city.webp");
+    background-size: cover;
+    grid-template-areas: 
+    "header header2 header3 header4"
+    "navbar navbar2 navbar3 navbar4"
+    "main main2 main3 main4"
+    "footer footer2 footer3 footer4";
+}
+
+header {
+    display: grid;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: last;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+main {
+    max-width: 90%;
+    grid-column-start: 1;
+    grid-column-end: last;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: last;
+    grid-row-start: 4;
+    grid-row-end: last;
+}
+
+.logo {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    object-fit: cover;
+    margin:auto;
+    margin-left: 60%;
+}
+
+.headerTitle {
+    font-size: 3em;
+    color:  hsl(132, 100%, 99%);
+    margin: auto;
+    margin-left: 60%;
+    margin-right: -15%;
+}
+
+h2 {
+    font-size: 2em;
+    color: hsl(132, 100%, 99%);
+    margin-left: 2%;
+}
+
+.instructions {
+    color: hsl(132, 100%, 99%);    
+    font-size: 1.5em;
+    padding: 35px;
+}
+
+.form-hautsDeFrance {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1%;
+    background-color: rgba(112, 125, 125, 0.483);
+    font-size: large;
+    color: hsl(132, 100%, 99%);
+}
+
+label {
+    width: 100%;
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+input {
+    width: 40%;
+    height: 40px;
+    border-style: hidden;
+    border-radius: inherit;
+    padding: 5px;
+    border: 5px solid rgb(185, 164, 164);
+}
+
+select {
+    width: 41.3%;
+    height: 60px;
+    border: 5px solid rgb(185, 164, 164);
+}
+
+.merci {
+margin: auto;
+margin-top: 3%;
+margin-right: 47%;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 5%;
+    height: 5%;
+
+    
+}
+.radioYes {
+    display: flex;
+    flex-direction: row;
+}
+
+.radioNo {
+    display: flex;
+    flex-direction: row;
+}
+
+#oui {
+    margin: auto;
+    margin-left: 10%;
+}
+
+#non {
+    margin: auto;
+    margin-left: 10%;
+}
+
+.send {
+    background-color: #1078ef;
+    border-radius: 7%;
+    color: white;
+    width: 125px ;
+    height: 60px;
+    font-size: large;
+    margin-top: 10%;
+    margin-right: 50%;
+    margin-bottom: 2%;
+}
+
+[type="radio"] {
+    border: 5px solid rgb(185, 164, 164);
+}
+
+[type="submit"] {
+    border: none;
+}

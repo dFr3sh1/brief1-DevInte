@@ -1,0 +1,107 @@
+body {
+    
+    background-image: url("/images/old-lille-district-of-vieux-lille-lille-city.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch ;
+}
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    padding: 5%;
+}
+
+.headerTitle {
+    font-size: 3em;
+    color:  hsl(132, 100%, 99%);
+    margin-top: 7%;
+    margin-left: 7%;
+}
+h2 {
+    font-size: 2em;
+    color: hsl(132, 100%, 99%);
+    margin-left: 3%;
+}
+
+.instructions {
+    color: hsl(132, 100%, 99%);    
+    font-size: 1.5em;
+    padding: 35px;
+}
+
+.form-hautsDeFrance {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1%;
+    background-color: rgba(112, 125, 125, 0.483);
+    font-size: large;
+    color: hsl(132, 100%, 99%);
+}
+
+label {
+    max-width: 100%;
+    padding: 5px;
+}
+input {
+    width: 30%;
+    height: 40px;
+    border-style: hidden;
+    border-radius: inherit;
+    padding: 5px;
+    border: 5px solid rgb(185, 164, 164);
+}
+
+select {
+    width: 32%;
+    height: 60px;
+    border: 5px solid rgb(185, 164, 164);
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: first baseline;
+    padding: 2%;
+    
+}
+#oui {
+    margin-top: -3%;
+}
+
+#non {
+    margin-top: -3%;
+}
+
+.send {
+    background-color: #1078ef;
+    border-radius: 7%;
+    color: white;
+    width: 125px ;
+    height: 60px;
+    font-size: large;
+    margin-left: 40%;
+    margin-bottom: 4%; 
+}
+
+[type="radio"] {
+    border: 5px solid rgb(185, 164, 164);
+}
+
+[type="submit"] {
+    border: none;
+}
