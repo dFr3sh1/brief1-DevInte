@@ -62,13 +62,13 @@ input {
     border-style: hidden;
     border-radius: inherit;
     padding: 5px;
-    border: 5px solid rgb(185, 164, 164);
+    border: 5px solid rgb(245 160 10);
 }
 
 select {
     width: 32%;
     height: 60px;
-    border: 5px solid rgb(185, 164, 164);
+    border: 5px solid rgb(245 160 10);
 }
 
 .radio {

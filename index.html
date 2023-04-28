@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="/styles/mainGrid.css">
     <title>HF Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="../images/logoHautsDeFrance.webp" alt="" class="logo">
-        <h1 class="headerTitle">Formulaire d'inscription</h1>
+        <div class="headerDiv">
+            <h1 class="headerTitle">Formulaire d'inscription</h1>                  
+            <img src="../images/logoHautsDeFrance.webp" alt="" class="logo">
+        </div>
+        <nav>
+            <a href="">Inscription</a>
+            <a href="">Autre Choix</a>
+        </nav>
     </header>
+
     <main>
         <h2 >Instructions de remplissage</h2>
-        <p class="instructions">Merci de remplir le formulaire ci-dessous. Les informations recoléctées seront utilisées dans le cadre de notre étude sur l'évolution socioprofessionnel des foyers dans  la Région Hauts de France, donc, la véracité de vos réponses nous sera très avantageuse pour les résultats de cet analyse. 
+        <p class="instructions">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto vitae voluptate, deleniti molestias doloribus ad voluptas a maiores sint? Illum consequatur amet consequuntur, dignissimos atque quam excepturi magni ut repellat optio suscipit rem et adipisci ex numquam ipsum possimus facere? Labore debitis recusandae fugit itaque architecto laborum deleniti repellendus distinctio rerum doloremque, natus soluta in neque voluptates esse beatae consequuntur, quisquam nulla modi atque placeat? Expedita a consectetur at quam explicabo ex consequatur ducimus optio odio nemo nisi esse molestias incidunt omnis eos necessitatibus illo beatae provident, minima repellendus ipsa mollitia sequi culpa. Alias temporibus fugiat obcaecati? Cumque, quod doloremque. 
             <br><br>Chaque champ avec * est obligatoire. <br> 
             <br><strong>Les données enregistrés seront stockés selon les règles RGPD Européenes et seront stockés dans la Communauté Européenne.</strong> </p>
         <form action="" methode="get" class="form-hautsDeFrance">
-            <div class="form-hautsDeFrance" margin-left="130px">
+            <div class="formcolumns" id="firstformcolumn" margin-left="130px">
                 <label for="name">Prénom : </label>
                 <input type="text" name="Prénom" id="Prénom" required class="input"><br><br>
                 <label for="last-name">Nom : </label>
@@ -39,6 +49,8 @@
                 <input type="text" name="Code Postal" id="Code Postal" maxlength="5" class="input"><br><br>
                 <label for="city">Ville : </label> 
                 <input type="text" name="City" id="City" required  class="input"><br><br>
+            </div>
+            <div  class="formcolumns" id="secondformcolumn">  
                 <label for="job">Métier : </label>
                 <select name="job" id="job" class="input">
                 <option value="indeterminé ou non renseigné">Indeterminé ou non renseigné</option>
@@ -258,16 +270,46 @@
                 <input type="date" name="deliveryDate" id="deliveryDate" required class="input"><br><br>
                 <label for="expiracyDate">Date de validité du passport : </label>
                 <input type="date" name="expiracyDate" id="expiracyDate" required class="input"><br><br>
-                <p class="merci">Merci de votre temps. Si vous voulez connaître sur le résultat de notre étude merci de le renseigner ci-dessous</p>
-                <div class="radio">
-                    <div class="radioYes">
-                        <input type="radio" name="choix" value="oui">
-                        <label for="oui" id="oui" >Oui</label><br>
+            </div>
+            <div  id="formlastrow">
+                <p class="merci">Merci de nous faire savoir les technologies que vous maîtrissez.</p>
+                <div class="checkTechno">
+                    <div class="web">
+                        <div class="technologies">
+                            <input type="checkbox" name="choixTecno" value="html">
+                            <label for="html" id="html" >HTML</label><br>
+                        </div>
+                        <div  class="technologies">
+                            <input type="checkbox" name="choixTechno"  value="css">
+                            <label for="css" id="css">CSS</label><br><br>
+                        </div>
                     </div>
-                    <div  class="radioNo">
-                        <input type="radio" name="choix"  value="non">
-                        <label for="non" id="non">Non</label><br><br>
+                    <div class="frontend">
+                        <div  class="technologies">
+                            <input type="checkbox" name="choixTechno"  value="react">
+                            <label for="react" id="react">React</label><br><br>
+                        </div>
+                        <div  class="technologies">
+                            <input type="checkbox" name="choixTechno"  value="angular">
+                            <label for="angular" id="angular">Angular</label><br><br>
+                        </div
                     </div>
+                    <div class="backend">
+                        <div  class="technologies">
+                            <input type="checkbox" name="choixTechno"  value="ruby">
+                            <label for="ruby" id="ruby">Ruby</label><br><br>
+                        </div>
+                        <div  class="technologies">
+                            <input type="checkbox" name="choixTechno"  value="c">
+                            <label for="c" id="c">C</label><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="cv">
+                    <label for="cv">CV : </label> <br>
+                    <input type="file" name="cv" id="cv" required class="input"><br><br>
+                    <label for="eyes">Une p'titte dernière sollicitude, merci de choissir les couleur de vos yeux : </label>
+                    <input type="color" name="eyes" id="yeys" required class="input"><br><br>
                 </div>
                 <input class="send" type="submit" value=" Envoyer ">
             </div>
